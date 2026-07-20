@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>淘宝商品分析助手</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>淘宝商品分析助手</h1>
+    <p>请先在已登录淘宝的商品详情页使用。采集过程会自动向下滚动。</p>
+    <button id="collect">采集当前商品</button>
+    <div id="status" role="status">等待开始</div>
+    <small>只采集当前商品页公开展示的图片和标题，不读取账号密码、订单或聊天。</small>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

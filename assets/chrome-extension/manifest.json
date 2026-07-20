@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "淘宝商品分析助手",
+  "version": "1.1.0",
+  "description": "在用户已登录的淘宝/天猫商品页采集主图、SKU图、详情图和页面元数据，供本地Hermes OCR与分析。",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "host_permissions": [
+    "https://*.taobao.com/*",
+    "https://*.tmall.com/*",
+    "https://*.tb.cn/*",
+    "https://*.alicdn.com/*",
+    "https://*.tbcdn.cn/*"
+  ],
+  "background": {"service_worker": "background.js"},
+  "action": {
+    "default_title": "淘宝商品分析助手",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.taobao.com/*", "https://*.tmall.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
