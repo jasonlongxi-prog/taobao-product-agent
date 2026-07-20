@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local captures and generated analysis (may contain copyrighted or private data)
+TaobaoAgent/
+captures/
+output/
+analysis-output/
+ocr/
+ocr-report.json
+ocr-combined.md
+image-inventory.csv
+source-manifest.json
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
